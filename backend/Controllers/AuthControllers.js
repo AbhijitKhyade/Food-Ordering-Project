@@ -1,16 +1,10 @@
 const User = require('../models/User');
-// const { body, validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const jwtSecret = "MynameisEndToEndWorld!$#";
+
 
 //REGISTER
 const createUserControllers = async (req, res) => {
-    // const errors = validationResult(req);
-    // if (!errors.isEmpty()) {
-
-    //     return res.status(400).json({ errors: errors.array() });
-    // }
 
     //hashing Password
     const salt = await bcrypt.genSalt(10);
@@ -34,11 +28,7 @@ const createUserControllers = async (req, res) => {
 
 //LOGIN USER
 const loginUserControllers = async (req, res) => {
-    // const errors = validationResult(req);
-    // if (!errors.isEmpty()) {
-    //     return res.status(400).json({ errors: errors.array() });
-    // }
-
+   
     let email = req.body.email;
     try {
 
@@ -61,7 +51,7 @@ const loginUserControllers = async (req, res) => {
         }
 
         //Assign Token
-        const authToken = jwt.sign(data, jwtSecret)
+        const authToken = jwt.sign(data, process.env.jwtSecret);
         return res.json({ success: true, authToken: authToken });
 
     } catch (error) {

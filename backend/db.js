@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URL = "mongodb+srv://abhi1728:abhi@cluster0.d74uv7y.mongodb.net/gofood?retryWrites=true&w=majority";
+const URL = process.env.MONGO_URL;
 const mongoDB = () => {
   mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true }).then((res) => {
     //Connection of database

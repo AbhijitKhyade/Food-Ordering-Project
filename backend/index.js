@@ -1,6 +1,5 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const port = 5000
 const cors = require('cors');
 const mongoDB = require('./db');
 
@@ -25,9 +24,12 @@ app.use('/api', require("../backend/Routes/CreateUser"));
 app.use('/api', require("../backend/Routes/DisplayData"));
 app.use('/api', require("../backend/Routes/OrderData"));
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+
+const port = process.env.PORT;
 
 //listen
 app.listen(port, () => {
