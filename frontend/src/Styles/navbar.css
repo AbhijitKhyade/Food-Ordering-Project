@@ -1,0 +1,29 @@
+.nav-btn{
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-btn:hover{
+    color: #00bc8c;
+    background-color: white;
+}
+
+.nav-btn-logout{
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-btn-logout:hover{
+    color: red;
+    background-color: white;
+}

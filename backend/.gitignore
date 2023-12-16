@@ -1,0 +1,12 @@
+# Ignore server-specific configuration files
+config.ini
+
+# Ignore sensitive information
+secrets/
+
+# Ignore logs and temporary files
+logs/
+tmp/
+
+# Ignore Node.js dependencies
+node_modules/

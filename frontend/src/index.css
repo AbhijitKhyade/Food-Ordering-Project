@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, Verdana, Tahoma, sans-serif;
+}
+
+#carousel{
+  max-height: 500px;
+}
+
+.invalid-input {
+  border-color: red; 
+  border-width: 1px;
+  border-style: solid;
+}

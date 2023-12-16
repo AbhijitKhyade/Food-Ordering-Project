@@ -1,0 +1,33 @@
+/* Add a box shadow and set initial position */
+.cards {
+    display: inline-block; /* Preserve card width and height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Apply transform on hover */
+  .cards:hover {
+    transform: translateY(-5px) scale(1.05);
+  }
+  
+
+  .cancel-btn{
+      margin-left: 98%;
+      margin-top: -35px;
+      background-color: red;
+      color: white;
+      border: 1px solid red;
+      border-radius: 5px;
+  }
+
+  .delete-icon{
+    color:red;
+    background-color: #222222;
+    border: none;
+  }
+
+  .delete-icon:hover{
+    background-color: #222222;
+  }
+
+  

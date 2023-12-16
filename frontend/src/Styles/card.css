@@ -1,0 +1,40 @@
+.card-btn{
+  color: white;
+  border: 1px solid #00bc8c;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #222222;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card-btn:hover{
+  color: black;
+  background-color: #00bc8c;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    /* Ensure the card occupies the full height */
+  }
+}
+
+
+.card-bodies {
+  justify-content: space-evenly;
+}
