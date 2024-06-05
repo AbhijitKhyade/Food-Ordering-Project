@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
-const URL = process.env.MONGO_URL;
+const URL = "mongodb+srv://abhi1728:abhi@cluster0.d74uv7y.mongodb.net/gofood?retryWrites=true&w=majority";
 const mongoDB = () => {
   mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true }).then((res) => {
     //Connection of database
     console.log("Database connected");
 
-     // Define the schema for the collection
+    // Define the schema for the collection
     const foodItemsSchema = new mongoose.Schema({
       name: {
         type: String,
